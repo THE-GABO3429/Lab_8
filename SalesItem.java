@@ -6,8 +6,8 @@ import java.util.Iterator;
  * 13)done
  * 14)A setup,tearDown and CommentTest methods
  * 15)done
- * 16)
- * 17)
+ * 16)done
+ * 17)it was running true, so I replaced it as false.
  * 18)
  * 19)
  * 20)
@@ -80,7 +80,7 @@ public class SalesItem
     public boolean addComment(String author, String text, int rating)
     {
         if(ratingInvalid(rating)) {  // reject invalid ratings
-            //return false;
+            return false;
         }
         
         if(findCommentByAuthor(author) != null) {  // reject mutiple comments by same author

@@ -68,7 +68,7 @@ public class SalesItemTest
     public void testIllegalRating()
     {
         SalesItem salesIte1 = new SalesItem("Java For Complete Idiots, Vol 2", 19900);
-        assertEquals(true, salesIte1.addComment("Joshua Black", "Not worth the money. The font is too small.", -5));
+        assertEquals(false, salesIte1.addComment("Joshua Black", "Not worth the money. The font is too small.", -5));
     }
 
     /**
@@ -88,7 +88,18 @@ public class SalesItemTest
         SalesItem salesIte1 = new SalesItem("Brain Surgery for Dummies.", 9899);
         assertEquals(true, salesIte1.addComment("Fred", "Great - I perform brain surgery every week now!", 4));
     }
+
+    @Test
+    public void testingComments()
+    {
+        SalesItem salesIte1 = new SalesItem("item", 100);
+        assertEquals(false, salesIte1.addComment("g", "yes", 6));
+        assertEquals(false, salesIte1.addComment("h", "ojf", -1));
+        assertEquals(true, salesIte1.addComment("H", "k", 5));
+        assertEquals(false, salesIte1.addComment("H", "i", 4));
+    }
 }
+
 
 
 
