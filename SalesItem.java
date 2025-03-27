@@ -2,6 +2,24 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
+ * 12)done
+ * 13)done
+ * 14)A setup,tearDown and CommentTest methods
+ * 15)done
+ * 16)
+ * 17)
+ * 18)
+ * 19)
+ * 20)
+ * 21)
+ * 22)
+ * 23)
+ * 24)
+ * 25)
+ * 26)
+ */
+
+/**
  * The class represents sales items on an online e-commerce site (such as Amazon.com).
  * SalesItem objects store all information relevant to this item, including description,
  * price, customer comments, etc.
