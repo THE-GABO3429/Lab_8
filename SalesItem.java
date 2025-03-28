@@ -8,15 +8,10 @@ import java.util.Iterator;
  * 15)done
  * 16)done
  * 17)it was running true, so I replaced it as false.
- * 18)
- * 19)
- * 20)
- * 21)
- * 22)
- * 23)
- * 24)
- * 25)
- * 26)
+ * 18)done
+ * 19)done
+ * 20)DONE
+ * 21)no
  */
 
 /**
@@ -133,7 +128,10 @@ public class SalesItem
         System.out.println("Price: " + priceString(price));
         System.out.println();
         System.out.println("Customer comments:");
+        //int index;
+        //this.ArrayList<>;
         for(Comment comment : comments) {
+        //while(index > comments.size()) {
             System.out.println("-------------------------------------------");
             System.out.println(comment.getFullDetails());
         }

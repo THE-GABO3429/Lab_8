@@ -49,7 +49,7 @@ public class CommentTest
     }
 
     @Test
-    public void testingUpVote()
+    public void testingVoteS()
     {
         SalesItem salesIte1 = new SalesItem("Cheese", 1000000);
         assertEquals(true, salesIte1.addComment("Dave", "The best cheese ever, worth the price, sue me!", 5));
